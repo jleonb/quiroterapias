@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <!-- @include faviconos.kit -->
+    <!-- @include head.kit -->
+    <title>Quiroterapias - Contacto</title>
+</head>
+<body>
+<!-- Main container -->
+<div class="page-container">
+
+<!-- Navigation Bloc -->
+	<!-- @include menu.kit -->
+<!-- Navigation Bloc END -->
+
+<!-- contenido -->
+	<!-- @include slider.kit -->
+<!-- contenido END -->
+
+<!-- bloc-13 -->
+<div class="bloc  bg-tile-d-bg l-bloc bg-repeat" id="bloc-13">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h3 class=" sm-shadow mg-sm">
+					CONTACTO - UBICACI&Oacute;N
+				</h3>
+				<br><br>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-13 END -->
+
+<!-- bloc-27 -->
+<div class="bloc bg-tile-d-bg l-bloc bg-repeat" id="bloc-27">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-sm-6">
+
+				<form class="form-horizontal" name="commentform" method="post" action="contacto.php">
+				    <div class="form-group">
+				        <div class="col-md-12">
+				            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="Nombre"/>
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <div class="col-md-12">
+				            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Tel&eacute;fono"/>
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <div class="col-md-12">
+				            <input type="email" class="form-control" id="email" name="email" placeholder="Direcci&oacute;n de correo"/>
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <div class="col-md-12">
+				            <textarea rows="12" class="form-control" id="comments" name="comments" placeholder="Su mensaje o comentario"></textarea>
+				        </div>
+				    </div>
+				    <div class="form-group">
+				        <div class="col-md-12">
+				            <button type="submit" value="Submit" class="bloc-button btn btn-d btn-md" id="send_btn">Enviar</button>
+				        </div>
+				    </div>
+				</form>
+
+				<br>
+			</div>
+			<div class="col-sm-6">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.4188987360353!2d-70.60547454966655!3d-33.4123216028473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf415c6268f1%3A0x40dd5b9a2c955438!2sAv+Vitacura+2902%2C+Las+Condes%2C+Regi%C3%B3n+Metropolitana!5e0!3m2!1ses!2scl!4v1479503575122" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-27 END -->
+
+<!-- Footer - bloc-28 -->
+	<!-- @include footer.kit -->
+<!-- Footer - bloc-28 END -->
+</div>
+<!-- Main container END -->
+
+</body>
+
+<script src="./js/head.min.js"></script>
+<script src="./js/jquery-2.1.0.min.js"></script>
+<script src="./js/jquery.flexisel.js"></script>
+
+<script>
+$(window).load(function() {
+  $("#productos").flexisel();
+});
+</script>
+
+<script>
+    $('#send_btn').popover({content: 'Gracias!'},'click');
+</script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56419301-12', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- Google Analytics END -->
+
+</html>
